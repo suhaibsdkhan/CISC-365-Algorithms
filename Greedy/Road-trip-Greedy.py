@@ -1,4 +1,4 @@
-def road_trip(stations,capactiy,i=0):
+def road_trip(stations,capacity,i=0):
     
     """ 
     Recursive function that finds where to stop for gas along a trip
@@ -29,7 +29,7 @@ def road_trip(stations,capactiy,i=0):
     
     stop_index=t-1
     print(f"Stopping for gas at station{stop_index}(distance {stations[stop_index]})")
-    road_trip(stations, caapacity, stop_index)
+    road_trip(stations, capacity, stop_index)
 
 
 # Example
