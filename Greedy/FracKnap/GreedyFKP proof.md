@@ -15,24 +15,24 @@ take O={q_1,q_2,q_3,...q_r} is any choice
 
 1. First we show that p_1 is optimal and is included 
 
-Suppose we say there is no optimal solution with p_1
-O's first fraction is not p_1 so p_1>q_1, p1 has more value than q_1
-we know total mass of A= total mass of o 
-Since q_1<p_1, in O we take less amount of x_1, in O there has to be a x_i where q_i>p_i 
+suppose we say there is no optimal solution with p_1. 
+We know that O's first fraction is not p1 so p1 is greater than q1
 
-So let O*={p1,q2,q3...q'_i..q_k+1}
+we also know that the total mass of A and O are the same and is c
 
-we know p_1>q_1 and q'_i<q_i  
+since we are taking a smaller fraction of x1 in O, there must be another xi that qi is taking more than A is taking with pi
+we know that there is a difference p1-q1 * x1.mass
 
-We must make sure that the 
+Now lets make O* where O*={p1,q2,q3....,q(k+1)}  where we HAVE taken p1
+here we know that since we took p1, there is a q'i that is lesser than qi so we have 
+q-q'i * xi.mass  so that mass(O*) is c
 
-total_mass(O*)=case(p_i-q_i) * x_1.mass = (q_i-q'_i)*x_i.mass
-
-We get that total_value(O*)-total_value(O)=(p_1-q1) * x_1.mass * ( (x_1.value/x_1.mass)-(x_i.value/x_i.mass))
-
-which will be more than 0 so it is a contradiction and we know that O* has p_1 and is more optimal than O as the 
-value difference is greater than 0.
-
+so we write that p1-q1 * x1.mass = q-q'i * xi.mass (equation 1)
+we also write Total_value(O*)-total_value(O) = p1-q1 * x1.value = q-q'i * xi.value (equation 2)
+then we substitute in q-q'i from equation 1 into equation 2 to simplify and get 
+Total_value(O*)-total_value(O) > 0   (greater than 0)
+This contradicts our assumption that firstly there is no optimal solution with p_1 and secondly O* has a larger value than O so O is not optimal and 
+O* is .
 
 2. We show that A is optimal
 
