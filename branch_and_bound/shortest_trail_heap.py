@@ -27,4 +27,4 @@ def branch_and_bound_shortest_path(graph, start, goal):
             new_path = path + [neighbor]
             heapq.heappush(P, (new_cost, new_path))
 
-    return best_path, U_global if best_path else (None, float('inf'))
+    return (best_path, U_global) if best_path else (None, float('inf'))

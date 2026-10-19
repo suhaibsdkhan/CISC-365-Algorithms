@@ -26,4 +26,4 @@ def branch_and_bound_with_list(graph, start, goal):
             new_path = path + [neighbor]
             P.append((new_cost, new_path))  # add q to P
 
-    return best_path, U_global if best_path else (None, float('inf'))
+    return (best_path, U_global) if best_path else (None, float('inf'))
